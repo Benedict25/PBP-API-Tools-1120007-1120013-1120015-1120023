@@ -95,7 +95,7 @@ func main() {
 	gocron.Start()
 	gocron.Every(10).Seconds().Do(task, eng, idn) // every 10 seconds do task with parameter eng and idn
 
-	time.Sleep(40 * time.Second) // program will stop at 40 seconds
+	time.Sleep(30 * time.Second) // program will stop at 40 seconds
 
 	gocron.Clear() // remove all gocron task
 	fmt.Println("All task removed")
